@@ -1,22 +1,26 @@
 {
   "name": "nodejs-nav",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NodejsNav",
-  "main": "server.js",
+  "main": "main.js",
   "scripts": {
     "start": "",
-    "dev": "nodemon && server.js"
+    "devn": "nodemon && main.js",
+    "dev": "parcel src/index.pug --open",
+    "devopen": "parcel src/index.pug --open 'google chrome'",
+    "pro": "parcel build src/index.pug"
   },
-
   "author": {
     "name": ""
   },
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0",
+    "parcel-bundler": "^1.12.4",
     "pug": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.5"
+    "nodemon": "^2.0.5",
+    "sass": "^1.27.0"
   }
 }
